@@ -53,8 +53,8 @@ public class RegisterActivity extends AppCompatActivity {
     }
 
     public void customerRegister(View v) {
-        registerKullaniciAdi = findViewById(R.id.kullaniciAdiInput);
-        registerSifre = findViewById(R.id.sifreInput);
+        registerKullaniciAdi = findViewById(R.id.registerKullaniciAdi);
+        registerSifre = findViewById(R.id.registerSifre);
 
         final Retrofit retrofit = new Retrofit.Builder().baseUrl(ApiUrl.BASE_URL).addConverterFactory(GsonConverterFactory.create()).build();
         ApiService apis = retrofit.create(ApiService.class);
